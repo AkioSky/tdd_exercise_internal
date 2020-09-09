@@ -5,5 +5,14 @@
 {% endblock %}
 
 {% block content %}
-    This is Answer View
+    <div class="row" style="text-align: center;">
+        <div class="col-12">
+            <h1>{{ clue.entry.entry_text }}</h1>
+            <p>{{ clue.clue_text }}</p>
+            <p>Puzzle Title : {{ clue.puzzle.title }}</p>
+            <p>ByLine : {{ clue.puzzle.byline }}</p>
+            <p>Publisher : {{ clue.puzzle.publisher }}</p>
+            <p>Date : {{ clue.puzzle.date }}</p>
+        </div>
+    </div>
 {% endblock %}
